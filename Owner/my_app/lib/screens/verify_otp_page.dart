@@ -9,7 +9,6 @@ class VerifyOtpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
 
@@ -19,13 +18,11 @@ class VerifyOtpPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
 
             children: [
-
               // OTP Circle Boxes
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
 
                 children: [
-
                   OtpCircleBox(),
                   const SizedBox(width: 12),
 
@@ -46,17 +43,12 @@ class VerifyOtpPage extends StatelessWidget {
 
               // Resend OTP
               GestureDetector(
-                onTap: () {
-
-                },
+                onTap: () {},
 
                 child: const Text(
                   "Resent OTP ?",
 
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontSize: 18,
-                  ),
+                  style: TextStyle(color: Colors.blue, fontSize: 18),
                 ),
               ),
 
@@ -67,7 +59,10 @@ class VerifyOtpPage extends StatelessWidget {
                 text: "Verify OTP",
 
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, AppRoutes.welcome);
+                  Navigator.pushReplacementNamed(
+                    context,
+                    AppRoutes.ownerDetails,
+                  );
                 },
               ),
             ],
